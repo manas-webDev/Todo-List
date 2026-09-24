@@ -92,9 +92,8 @@ ul li.checked::before {
   background-image: url(images/checked.png);
 }
 
-ul li span {
+ul li .delete-btn, ul li .edit-btn {
   position: absolute;
-  right: 15px;
   top: 50%;
   transform: translateY(-50%); 
   width: 30px;
@@ -107,9 +106,54 @@ ul li span {
   transition: 0.2s;
 }
 
-ul li span:hover {
+ul li .task-name {
+  display: inline-block;
+  padding-right: 70px;
+}
+
+ul li .delete-btn {
+  right: 15px;
+}
+
+ul li .delete-btn:hover {
   background: #ccc;           
   color: red;
+}
+
+ul li .edit-btn {
+  right: 55px;
+  font-size: 18px;
+  color: #555;
+}
+
+ul li .edit-btn:hover {
+  background: #ccc;           
+  color: #000;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+
+
+.clear-btn {
+  padding: 8px 16px;
+  background: #ff5945;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clear-btn:hover {
+  background: #e04b39;
 }
 
 
